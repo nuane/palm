@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Node Sample App</title>
+
+  <!-- CSS -->
+  <!-- load bootstrap and our own personal stylesheet -->
+  <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="text/javascript">
+    var myInput = document.getElementById('myFileInput');
+    function sendPic() {
+      var file = myInput.files[0];
+
+      // Send file here either by adding it to a `FormData` object
+      // and sending that via XHR, or by simply passing the file into
+      // the `send` method of an XHR instance.
+    }
+
+    myInput.addEventListener('change', sendPic, false);
+  </script>
+
+</head>
+<body>
+
+  <div class="container">
+      <div class="jumbotron">
+      <h1>Testing and colliding</h1>
+      <p>This is my website <a href="https://nuane.github.io">Benjamin Krantz has Antz in his Pantz</a></p>
+      </div>
+  </div>
+
+  <input id="myFileInput" type="file" accept="image/*;capture=camera" class="btn btn-primary btn-lg">
+
+
+</body>
+</html>
